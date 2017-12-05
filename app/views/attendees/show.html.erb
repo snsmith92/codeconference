@@ -13,10 +13,11 @@
     <p> Company & Role: <strong> <%= @attendee.role %> at <%=@attendee.company %></strong> </p>
   </div>
 
-<!-- 
-:email, :phone, :company, :role -->
-
-
+  <br />
   <h6 class = "text-center"> <strong><i> Please print this for your records. </i></strong></h6>
+  <br />
+  <div class = "text-center">
+    <%= link_to 'Back to Home', root_path, class: "btn btn-warning" %>
+  </div>
 
 </div>
