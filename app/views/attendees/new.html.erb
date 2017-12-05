@@ -1,0 +1,18 @@
+<div class = "registration_box col-8 offset-2">
+  <div class = "col-10 offset-1">
+    <%= simple_form_for @attendee do |f| %>
+      <%= f.input :firstname, placeholder: 'e.g. John', error: 'First name is mandatory.' %>
+      <%= f.input :lastname, placeholder: 'e.g. Smith', error: 'Last name is mandatory.' %>
+      <%= f.input :email, placeholder: 'e.g. attendee@codeconference.com', error: 'Email is mandatory.' %>      
+      <%= f.input :phone, placeholder: 'e.g. +1-242-555-5555' %>
+      <%= f.input :company, placeholder: 'e.g. Coders FX' %>
+      <%= f.input :role, placeholder: 'e.g. Rails Engineer' %>
+      <div class = "row">
+        <%= f.submit 'Register', class: "btn btn-success" %> 
+        &nbsp &nbsp
+        <%= link_to 'Back to Home', root_path, class: "btn btn-warning" %>
+      <% end %>
+    </div>
+    
+  </div>
+</div>

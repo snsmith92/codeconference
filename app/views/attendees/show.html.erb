@@ -1,0 +1,22 @@
+<div class = "registration_box col-10 offset-1">
+  <h3 class = "text-center"> Your Registration Verification </h3>
+  <br />
+
+  <h6 class = "text-center"> Congratulations! Your registration was successful! </h6>
+  <br/>
+
+  <div class = "grey-box col-6 offset-3">
+    <p> Registration Number: <strong><%= @attendee.id %></strong> </p>
+    <p> Full Name: <strong> <%= @attendee.firstname %>  <%= @attendee.lastname%> </strong> </p>
+    <p> Email Address: <strong> <%= @attendee.email %> </strong> </p>
+    <p> Phone Number: <strong> <%= @attendee.phone %> </strong></p>
+    <p> Company & Role: <strong> <%= @attendee.role %> at <%=@attendee.company %></strong> </p>
+  </div>
+
+<!-- 
+:email, :phone, :company, :role -->
+
+
+  <h6 class = "text-center"> <strong><i> Please print this for your records. </i></strong></h6>
+
+</div>
